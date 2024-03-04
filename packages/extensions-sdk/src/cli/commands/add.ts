@@ -5,15 +5,15 @@ import {
 	EXTENSION_TYPES,
 	ExtensionManifest,
 	HYBRID_EXTENSION_TYPES,
-} from '@directus/constants';
+} from '@smartnews/directus-constants';
 import type {
 	ExtensionOptions,
 	ExtensionOptionsBundleEntry,
 	NestedExtensionType,
 	ExtensionManifest as TExtensionManifest,
-} from '@directus/types';
-import { isIn, isTypeIn } from '@directus/utils';
-import { pathToRelativeUrl } from '@directus/utils/node';
+} from '@smartnews/directus-types';
+import { isIn, isTypeIn } from '@smartnews/directus-utils';
+import { pathToRelativeUrl } from '@smartnews/directus-utils/node';
 import chalk from 'chalk';
 import { execa } from 'execa';
 import fse from 'fs-extra';

@@ -1,6 +1,6 @@
 import { useUserStore } from '@/stores/user';
-import { Accountability, Role, User } from '@directus/types';
-import { parsePreset as parsePresetShared } from '@directus/utils';
+import { Accountability, Role, User } from '@smartnews/directus-types';
+import { parsePreset as parsePresetShared } from '@smartnews/directus-utils';
 
 export function parsePreset(preset: Record<string, any> | null): Record<string, any> {
 	const { currentUser } = useUserStore();

@@ -1,4 +1,4 @@
-import type { ExtensionType } from '@directus/types';
+import type { ExtensionType } from '@smartnews/directus-types';
 import fse from 'fs-extra';
 import path from 'path';
 import type { Language } from '../../types.js';

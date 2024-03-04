@@ -1,4 +1,4 @@
-import { defineDisplay } from '@directus/utils';
+import { defineDisplay } from '@smartnews/directus-utils';
 import DisplayImage from './image.vue';
 
 export default defineDisplay({

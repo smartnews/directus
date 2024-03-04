@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/utils';
+import { defineInterface } from '@smartnews/directus-utils';
 import InterfaceSystemField from './system-field.vue';
 
 export default defineInterface({

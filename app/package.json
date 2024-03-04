@@ -1,5 +1,5 @@
 {
-	"name": "@directus/app",
+	"name": "@smartnews/directus-app",
 	"version": "9.26.0",
 	"description": "App dashboard for Directus",
 	"homepage": "https://directus.io",
@@ -29,12 +29,12 @@
 	"devDependencies": {
 		"@babel/core": "7.21.4",
 		"@babel/preset-env": "7.21.4",
-		"@directus/constants": "workspace:*",
-		"@directus/exceptions": "workspace:*",
-		"@directus/extensions-sdk": "workspace:*",
+		"@smartnews/directus-constants": "workspace:*",
+		"@smartnews/directus-exceptions": "workspace:*",
+		"@smartnews/directus-extensions-sdk": "workspace:*",
 		"@directus/format-title": "10.0.0",
-		"@directus/types": "workspace:*",
-		"@directus/utils": "workspace:*",
+		"@smartnews/directus-types": "workspace:*",
+		"@smartnews/directus-utils": "workspace:*",
 		"@fortawesome/fontawesome-svg-core": "6.4.0",
 		"@fortawesome/free-brands-svg-icons": "6.4.0",
 		"@fullcalendar/core": "6.1.5",
@@ -137,6 +137,6 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@directus/composables": "workspace:*"
+		"@smartnews/directus-composables": "workspace:*"
 	}
 }

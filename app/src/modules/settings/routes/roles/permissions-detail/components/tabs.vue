@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useSync } from '@directus/composables';
+import { useSync } from '@smartnews/directus-composables';
 
 export default defineComponent({
 	props: {

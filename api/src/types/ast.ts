@@ -1,4 +1,4 @@
-import type { Query, Relation } from '@directus/types';
+import type { Query, Relation } from '@smartnews/directus-types';
 
 export type M2ONode = {
 	type: 'm2o';

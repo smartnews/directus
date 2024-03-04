@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/utils';
+import { defineInterface } from '@smartnews/directus-utils';
 import InterfaceInputTranslatedString from './system-raw-editor.vue';
 
 export default defineInterface({

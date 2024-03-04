@@ -1,5 +1,5 @@
-import type { Item, Query } from '@directus/types';
-import { getEndpoint, moveInArray } from '@directus/utils';
+import type { Item, Query } from '@smartnews/directus-types';
+import { getEndpoint, moveInArray } from '@smartnews/directus-utils';
 import axios from 'axios';
 import { isEqual, throttle } from 'lodash-es';
 import type { ComputedRef, Ref, WritableComputedRef } from 'vue';

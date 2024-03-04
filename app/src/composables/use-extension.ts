@@ -1,7 +1,7 @@
 import { Ref, computed, unref } from 'vue';
-import { AppExtensionConfigs, AppExtensionType, HybridExtensionType, Plural } from '@directus/types';
+import { AppExtensionConfigs, AppExtensionType, HybridExtensionType, Plural } from '@smartnews/directus-types';
 import { useExtensions } from '@/extensions';
-import { pluralize } from '@directus/utils';
+import { pluralize } from '@smartnews/directus-utils';
 
 export function useExtension<T extends AppExtensionType | HybridExtensionType>(
 	type: T | Ref<T>,

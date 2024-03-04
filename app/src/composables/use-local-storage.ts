@@ -1,5 +1,5 @@
 import { ref, watch } from 'vue';
-import { parseJSON } from '@directus/utils';
+import { parseJSON } from '@smartnews/directus-utils';
 
 type LocalStorageObjectType = string | number | boolean | object | null;
 

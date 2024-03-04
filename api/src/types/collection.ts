@@ -1,5 +1,5 @@
-import type { Field } from '@directus/types';
-import type { Table } from '@directus/schema';
+import type { Field } from '@smartnews/directus-types';
+import type { Table } from '@smartnews/directus-schema';
 
 export type CollectionMeta = {
 	collection: string;

@@ -1,5 +1,5 @@
 {
-	"name": "@directus/types",
+	"name": "@smartnews/directus-types",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {
@@ -27,8 +27,8 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@directus/constants": "workspace:*",
-		"@directus/schema": "workspace:*",
+		"@smartnews/directus-constants": "workspace:*",
+		"@smartnews/directus-schema": "workspace:*",
 		"@directus/tsconfig": "0.0.7",
 		"@types/express": "4.17.17",
 		"@types/geojson": "7946.0.10",

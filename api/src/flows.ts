@@ -1,4 +1,4 @@
-import * as sharedExceptions from '@directus/exceptions';
+import * as sharedExceptions from '@smartnews/directus-exceptions';
 import type {
 	Accountability,
 	ActionHandler,
@@ -7,9 +7,9 @@ import type {
 	Operation,
 	OperationHandler,
 	SchemaOverview,
-} from '@directus/types';
-import { Action } from '@directus/constants';
-import { applyOptionsData, isValidJSON, parseJSON, toArray } from '@directus/utils';
+} from '@smartnews/directus-types';
+import { Action } from '@smartnews/directus-constants';
+import { applyOptionsData, isValidJSON, parseJSON, toArray } from '@smartnews/directus-utils';
 import fastRedact from 'fast-redact';
 import type { Knex } from 'knex';
 import { omit, pick } from 'lodash-es';
@@ -19,7 +19,7 @@ import getDatabase from './database/index.js';
 import emitter from './emitter.js';
 import env from './env.js';
 import * as exceptions from './exceptions/index.js';
-import { BaseException } from '@directus/exceptions';
+import { BaseException } from '@smartnews/directus-exceptions';
 import logger from './logger.js';
 import { getMessenger } from './messenger.js';
 import { ActivityService } from './services/activity.js';

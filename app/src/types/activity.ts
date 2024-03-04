@@ -1,4 +1,4 @@
-import { User } from '@directus/types';
+import { User } from '@smartnews/directus-types';
 
 export type Activity = {
 	id: number;

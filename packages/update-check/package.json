@@ -1,5 +1,5 @@
 {
-	"name": "@directus/update-check",
+	"name": "@smartnews/directus-update-check",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {

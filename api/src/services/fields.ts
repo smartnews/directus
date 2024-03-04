@@ -1,8 +1,8 @@
-import { KNEX_TYPES, REGEX_BETWEEN_PARENS } from '@directus/constants';
-import type { Column, SchemaInspector } from '@directus/schema';
-import { createInspector } from '@directus/schema';
-import type { Accountability, Field, FieldMeta, RawField, SchemaOverview, Type } from '@directus/types';
-import { addFieldFlag, toArray } from '@directus/utils';
+import { KNEX_TYPES, REGEX_BETWEEN_PARENS } from '@smartnews/directus-constants';
+import type { Column, SchemaInspector } from '@smartnews/directus-schema';
+import { createInspector } from '@smartnews/directus-schema';
+import type { Accountability, Field, FieldMeta, RawField, SchemaOverview, Type } from '@smartnews/directus-types';
+import { addFieldFlag, toArray } from '@smartnews/directus-utils';
 import type Keyv from 'keyv';
 import type { Knex } from 'knex';
 import { isEqual, isNil } from 'lodash-es';

@@ -1,4 +1,4 @@
-import { toArray } from '@directus/utils';
+import { toArray } from '@smartnews/directus-utils';
 import type { AuthDriver } from './auth/auth.js';
 import {
 	LDAPAuthDriver,

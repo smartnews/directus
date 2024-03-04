@@ -1,4 +1,4 @@
-import { defineDisplay } from '@directus/utils';
+import { defineDisplay } from '@smartnews/directus-utils';
 import DisplayIcon from './icon.vue';
 
 export default defineDisplay({

@@ -1,4 +1,4 @@
-import { defineInterface } from '@directus/utils';
+import { defineInterface } from '@smartnews/directus-utils';
 import InterfaceGroupDetail from './group-detail.vue';
 import PreviewSVG from './preview.svg?raw';
 

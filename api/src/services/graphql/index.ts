@@ -1,7 +1,7 @@
-import { Action, FUNCTIONS } from '@directus/constants';
-import type { BaseException } from '@directus/exceptions';
-import type { Accountability, Aggregate, Filter, PrimaryKey, Query, SchemaOverview } from '@directus/types';
-import { parseFilterFunctionPath } from '@directus/utils';
+import { Action, FUNCTIONS } from '@smartnews/directus-constants';
+import type { BaseException } from '@smartnews/directus-exceptions';
+import type { Accountability, Aggregate, Filter, PrimaryKey, Query, SchemaOverview } from '@smartnews/directus-types';
+import { parseFilterFunctionPath } from '@smartnews/directus-utils';
 import argon2 from 'argon2';
 import type {
 	ArgumentNode,

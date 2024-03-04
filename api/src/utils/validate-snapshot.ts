@@ -1,4 +1,4 @@
-import { TYPES } from '@directus/constants';
+import { TYPES } from '@smartnews/directus-constants';
 import Joi from 'joi';
 import { ALIAS_TYPES } from '../constants.js';
 import { getDatabaseClient } from '../database/index.js';

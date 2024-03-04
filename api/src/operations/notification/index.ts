@@ -1,5 +1,5 @@
-import type { Accountability } from '@directus/types';
-import { defineOperationApi, optionToString, toArray } from '@directus/utils';
+import type { Accountability } from '@smartnews/directus-types';
+import { defineOperationApi, optionToString, toArray } from '@smartnews/directus-utils';
 import { NotificationsService } from '../../services/notifications.js';
 import { getAccountabilityForRole } from '../../utils/get-accountability-for-role.js';
 

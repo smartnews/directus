@@ -1,5 +1,5 @@
-import type { Accountability, Permission, SchemaOverview } from '@directus/types';
-import { deepMap, parseFilter, parseJSON, parsePreset } from '@directus/utils';
+import type { Accountability, Permission, SchemaOverview } from '@smartnews/directus-types';
+import { deepMap, parseFilter, parseJSON, parsePreset } from '@smartnews/directus-utils';
 import { cloneDeep } from 'lodash-es';
 import hash from 'object-hash';
 import { getCache, getCacheValue, getSystemCache, setCacheValue, setSystemCache } from '../cache.js';

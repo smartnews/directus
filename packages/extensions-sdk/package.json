@@ -1,5 +1,5 @@
 {
-	"name": "@directus/extensions-sdk",
+	"name": "@smartnews/directus-extensions-sdk",
 	"version": "9.26.0",
 	"description": "A toolkit to develop extensions to extend Directus",
 	"homepage": "https://directus.io",
@@ -34,10 +34,10 @@
 		"test": "vitest --watch=false"
 	},
 	"dependencies": {
-		"@directus/composables": "workspace:*",
-		"@directus/constants": "workspace:*",
-		"@directus/types": "workspace:*",
-		"@directus/utils": "workspace:*",
+		"@smartnews/directus-composables": "workspace:*",
+		"@smartnews/directus-constants": "workspace:*",
+		"@smartnews/directus-types": "workspace:*",
+		"@smartnews/directus-utils": "workspace:*",
 		"@rollup/plugin-commonjs": "24.1.0",
 		"@rollup/plugin-json": "6.0.0",
 		"@rollup/plugin-node-resolve": "15.0.2",

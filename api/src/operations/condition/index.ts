@@ -1,5 +1,5 @@
-import type { Filter } from '@directus/types';
-import { defineOperationApi, validatePayload } from '@directus/utils';
+import type { Filter } from '@smartnews/directus-types';
+import { defineOperationApi, validatePayload } from '@smartnews/directus-utils';
 
 type Options = {
 	filter: Filter;

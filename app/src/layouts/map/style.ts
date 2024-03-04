@@ -1,4 +1,4 @@
-import { cssVar } from '@directus/utils/browser';
+import { cssVar } from '@smartnews/directus-utils/browser';
 
 export function getMapStyle() {
 	return [

@@ -1,4 +1,4 @@
-import { defineModule } from '@directus/utils';
+import { defineModule } from '@smartnews/directus-utils';
 import ActivityCollection from './routes/collection.vue';
 import ActivityItem from './routes/item.vue';
 

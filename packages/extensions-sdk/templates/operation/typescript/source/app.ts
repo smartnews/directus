@@ -1,4 +1,4 @@
-import { defineOperationApp } from '@directus/extensions-sdk';
+import { defineOperationApp } from '@smartnews/directus-extensions-sdk';
 
 export default defineOperationApp({
 	id: 'custom',

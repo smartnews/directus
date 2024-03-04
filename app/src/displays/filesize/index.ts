@@ -1,4 +1,4 @@
-import { defineDisplay } from '@directus/utils';
+import { defineDisplay } from '@smartnews/directus-utils';
 import { formatFilesize } from '@/utils/format-filesize';
 import { h } from 'vue';
 

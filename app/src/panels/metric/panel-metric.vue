@@ -9,9 +9,9 @@
 </template>
 
 <script setup lang="ts">
-import { Filter } from '@directus/types';
-import { abbreviateNumber } from '@directus/utils';
-import { cssVar } from '@directus/utils/browser';
+import { Filter } from '@smartnews/directus-types';
+import { abbreviateNumber } from '@smartnews/directus-utils';
+import { cssVar } from '@smartnews/directus-utils/browser';
 import { isNil } from 'lodash';
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';

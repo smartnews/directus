@@ -1,5 +1,5 @@
-import type { Accountability, Query, SchemaOverview } from '@directus/types';
-import { parseJSON, toArray } from '@directus/utils';
+import type { Accountability, Query, SchemaOverview } from '@smartnews/directus-types';
+import { parseJSON, toArray } from '@smartnews/directus-utils';
 import { format, isValid, parseISO } from 'date-fns';
 import flat from 'flat';
 import Joi from 'joi';

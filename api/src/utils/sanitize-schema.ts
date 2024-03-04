@@ -1,5 +1,5 @@
-import type { Column } from '@directus/schema';
-import type { Field, Relation } from '@directus/types';
+import type { Column } from '@smartnews/directus-schema';
+import type { Field, Relation } from '@smartnews/directus-types';
 import { pick } from 'lodash-es';
 import type { Collection } from '../types/index.js';
 

@@ -1,4 +1,4 @@
-import { BaseException } from '@directus/exceptions';
+import { BaseException } from '@smartnews/directus-exceptions';
 
 export class RouteNotFoundException extends BaseException {
 	constructor(path: string) {

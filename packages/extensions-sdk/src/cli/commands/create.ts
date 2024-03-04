@@ -5,7 +5,7 @@ import {
 	EXTENSION_PKG_KEY,
 	EXTENSION_TYPES,
 	HYBRID_EXTENSION_TYPES,
-} from '@directus/constants';
+} from '@smartnews/directus-constants';
 import type {
 	ApiExtensionType,
 	AppExtensionType,
@@ -13,8 +13,8 @@ import type {
 	ExtensionOptions,
 	ExtensionType,
 	HybridExtensionType,
-} from '@directus/types';
-import { isIn } from '@directus/utils';
+} from '@smartnews/directus-types';
+import { isIn } from '@smartnews/directus-utils';
 import chalk from 'chalk';
 import { execa } from 'execa';
 import fse from 'fs-extra';

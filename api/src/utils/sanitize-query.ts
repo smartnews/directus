@@ -1,5 +1,5 @@
-import type { Accountability, Aggregate, Filter, Query } from '@directus/types';
-import { parseFilter, parseJSON } from '@directus/utils';
+import type { Accountability, Aggregate, Filter, Query } from '@smartnews/directus-types';
+import { parseFilter, parseJSON } from '@smartnews/directus-utils';
 import { flatten, get, isPlainObject, merge, set } from 'lodash-es';
 import logger from '../logger.js';
 import { Meta } from '../types/index.js';

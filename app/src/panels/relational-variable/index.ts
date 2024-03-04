@@ -1,4 +1,4 @@
-import { definePanel } from '@directus/utils';
+import { definePanel } from '@smartnews/directus-utils';
 import PanelRelationalVariable from './panel-relational-variable.vue';
 
 export default definePanel({

@@ -1,4 +1,4 @@
-import { isUpToDate } from '@directus/update-check';
+import { isUpToDate } from '@smartnews/directus-update-check';
 import type { TerminusOptions } from '@godaddy/terminus';
 import { createTerminus } from '@godaddy/terminus';
 import type { Request } from 'express';

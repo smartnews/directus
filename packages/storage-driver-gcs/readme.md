@@ -1,3 +1,3 @@
-# `@directus/storage-driver-gcs`
+# `@smartnews/directus-storage-driver-gcs`
 
-GCS file storage driver for `@directus/storage`
+GCS file storage driver for `@smartnews/directus-storage`

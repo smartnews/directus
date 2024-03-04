@@ -1,5 +1,5 @@
-import type { Accountability } from '@directus/types';
-import { Action } from '@directus/constants';
+import type { Accountability } from '@smartnews/directus-types';
+import { Action } from '@smartnews/directus-constants';
 import { uniq } from 'lodash-es';
 import validateUUID from 'uuid-validate';
 import env from '../env.js';

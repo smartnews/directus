@@ -1,5 +1,5 @@
 {
-	"name": "@directus/storage-driver-cloudinary",
+	"name": "@smartnews/directus-storage-driver-cloudinary",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {
@@ -7,7 +7,7 @@
 		"dev": "tsc --watch",
 		"test": "vitest --watch=false"
 	},
-	"description": "Cloudinary file storage abstraction for `@directus/storage`",
+	"description": "Cloudinary file storage abstraction for `@smartnews/directus-storage`",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/directus/directus.git",
@@ -29,8 +29,8 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@directus/storage": "workspace:*",
-		"@directus/utils": "workspace:*",
+		"@smartnews/directus-storage": "workspace:*",
+		"@smartnews/directus-utils": "workspace:*",
 		"p-queue": "7.3.4",
 		"undici": "5.22.0"
 	},

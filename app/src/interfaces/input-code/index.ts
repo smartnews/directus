@@ -1,5 +1,5 @@
-import { DeepPartial, Field } from '@directus/types';
-import { defineInterface } from '@directus/utils';
+import { DeepPartial, Field } from '@smartnews/directus-types';
+import { defineInterface } from '@smartnews/directus-utils';
 import CodeMirror from 'codemirror';
 import 'codemirror/mode/meta';
 import InterfaceCode from './input-code.vue';

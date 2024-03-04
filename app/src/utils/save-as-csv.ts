@@ -1,7 +1,7 @@
 import { useAliasFields } from '@/composables/use-alias-fields';
 import { useFieldsStore } from '@/stores/fields';
-import { get } from '@directus/utils';
-import { Field, Item } from '@directus/types';
+import { get } from '@smartnews/directus-utils';
+import { Field, Item } from '@smartnews/directus-types';
 import { saveAs } from 'file-saver';
 import { parse } from 'json2csv';
 import { computed, ref } from 'vue';

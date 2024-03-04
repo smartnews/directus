@@ -1,7 +1,7 @@
 import { useRelationsStore } from '@/stores/relations';
-import { FailedValidationException } from '@directus/exceptions';
-import { Field, LogicalFilterAND } from '@directus/types';
-import { validatePayload } from '@directus/utils';
+import { FailedValidationException } from '@smartnews/directus-exceptions';
+import { Field, LogicalFilterAND } from '@smartnews/directus-types';
+import { validatePayload } from '@smartnews/directus-utils';
 import { cloneDeep, flatten, isEmpty, isNil } from 'lodash';
 import { applyConditions } from './apply-conditions';
 

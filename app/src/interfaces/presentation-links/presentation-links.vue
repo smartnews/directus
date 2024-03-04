@@ -21,10 +21,10 @@ import { computed, inject, ref, toRefs } from 'vue';
 import { render } from 'micromustache';
 import { omit } from 'lodash';
 import { useItem } from '@/composables/use-item';
-import { getFieldsFromTemplate } from '@directus/utils';
-import { Query } from '@directus/types';
-import { useCollection } from '@directus/composables';
-import { RELATIONAL_TYPES } from '@directus/constants';
+import { getFieldsFromTemplate } from '@smartnews/directus-utils';
+import { Query } from '@smartnews/directus-types';
+import { useCollection } from '@smartnews/directus-composables';
+import { RELATIONAL_TYPES } from '@smartnews/directus-constants';
 
 type Link = {
 	icon: string;

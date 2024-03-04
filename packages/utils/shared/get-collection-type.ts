@@ -1,4 +1,4 @@
-import type { Collection, CollectionType } from '@directus/types';
+import type { Collection, CollectionType } from '@smartnews/directus-types';
 
 /**
  * Get the type of collection. One of alias | table. (And later: view)

@@ -1,5 +1,5 @@
 {
-	"name": "@directus/storage-driver-gcs",
+	"name": "@smartnews/directus-storage-driver-gcs",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {
@@ -7,7 +7,7 @@
 		"dev": "tsc --watch",
 		"test": "vitest --watch=false"
 	},
-	"description": "GCS file storage abstraction for `@directus/storage`",
+	"description": "GCS file storage abstraction for `@smartnews/directus-storage`",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/directus/directus.git",
@@ -29,8 +29,8 @@
 		"access": "public"
 	},
 	"dependencies": {
-		"@directus/storage": "workspace:*",
-		"@directus/utils": "workspace:*",
+		"@smartnews/directus-storage": "workspace:*",
+		"@smartnews/directus-utils": "workspace:*",
 		"@google-cloud/storage": "6.9.5"
 	},
 	"devDependencies": {

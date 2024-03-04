@@ -1,4 +1,4 @@
-import { defineOperationApi, optionToObject } from '@directus/utils';
+import { defineOperationApi, optionToObject } from '@smartnews/directus-utils';
 import { omit } from 'lodash-es';
 import { getFlowManager } from '../../flows.js';
 

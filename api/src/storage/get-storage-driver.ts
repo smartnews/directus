@@ -1,11 +1,11 @@
-import type { Driver } from '@directus/storage';
+import type { Driver } from '@smartnews/directus-storage';
 
 export const _aliasMap: Record<string, string> = {
-	local: '@directus/storage-driver-local',
-	s3: '@directus/storage-driver-s3',
-	gcs: '@directus/storage-driver-gcs',
-	azure: '@directus/storage-driver-azure',
-	cloudinary: '@directus/storage-driver-cloudinary',
+	local: '@smartnews/directus-storage-driver-local',
+	s3: '@smartnews/directus-storage-driver-s3',
+	gcs: '@smartnews/directus-storage-driver-gcs',
+	azure: '@smartnews/directus-storage-driver-azure',
+	cloudinary: '@smartnews/directus-storage-driver-cloudinary',
 };
 
 export const getStorageDriver = async (driverName: string): Promise<typeof Driver> => {

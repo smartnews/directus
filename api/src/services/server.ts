@@ -1,5 +1,5 @@
-import type { Accountability, SchemaOverview } from '@directus/types';
-import { toArray } from '@directus/utils';
+import type { Accountability, SchemaOverview } from '@smartnews/directus-types';
+import { toArray } from '@smartnews/directus-utils';
 import type { Knex } from 'knex';
 import { merge } from 'lodash-es';
 import { Readable } from 'node:stream';

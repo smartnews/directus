@@ -1,5 +1,5 @@
 {
-	"name": "@directus/storage-driver-s3",
+	"name": "@smartnews/directus-storage-driver-s3",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {
@@ -7,7 +7,7 @@
 		"dev": "tsc --watch",
 		"test": "vitest --watch=false"
 	},
-	"description": "S3 file storage abstraction for `@directus/storage`",
+	"description": "S3 file storage abstraction for `@smartnews/directus-storage`",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/directus/directus.git",
@@ -32,8 +32,8 @@
 		"@aws-sdk/abort-controller": "3.310.0",
 		"@aws-sdk/client-s3": "3.317.0",
 		"@aws-sdk/lib-storage": "3.317.0",
-		"@directus/storage": "workspace:*",
-		"@directus/utils": "workspace:*"
+		"@smartnews/directus-storage": "workspace:*",
+		"@smartnews/directus-utils": "workspace:*"
 	},
 	"devDependencies": {
 		"@directus/tsconfig": "0.0.7",

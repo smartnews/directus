@@ -1,5 +1,5 @@
-import { defineInterface } from '@directus/utils';
-import { DeepPartial, Field } from '@directus/types';
+import { defineInterface } from '@smartnews/directus-utils';
+import { DeepPartial, Field } from '@smartnews/directus-types';
 import InterfaceSelectMultipleCheckboxesTree from './select-multiple-checkbox-tree.vue';
 import PreviewSVG from './preview.svg?raw';
 

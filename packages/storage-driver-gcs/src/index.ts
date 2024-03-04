@@ -1,5 +1,5 @@
-import type { Driver, Range } from '@directus/storage';
-import { normalizePath } from '@directus/utils';
+import type { Driver, Range } from '@smartnews/directus-storage';
+import { normalizePath } from '@smartnews/directus-utils';
 import type { Bucket, GetFilesOptions } from '@google-cloud/storage';
 import { Storage } from '@google-cloud/storage';
 import { join } from 'node:path';

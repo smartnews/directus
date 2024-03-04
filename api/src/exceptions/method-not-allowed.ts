@@ -1,4 +1,4 @@
-import { BaseException } from '@directus/exceptions';
+import { BaseException } from '@smartnews/directus-exceptions';
 
 type Extensions = {
 	allow: string[];

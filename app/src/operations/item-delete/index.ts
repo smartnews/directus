@@ -1,5 +1,5 @@
-import { defineOperationApp } from '@directus/utils';
-import { toArray } from '@directus/utils';
+import { defineOperationApp } from '@smartnews/directus-utils';
+import { toArray } from '@smartnews/directus-utils';
 
 export default defineOperationApp({
 	id: 'item-delete',

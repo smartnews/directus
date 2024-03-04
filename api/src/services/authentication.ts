@@ -1,5 +1,5 @@
-import type { Accountability, SchemaOverview } from '@directus/types';
-import { Action } from '@directus/constants';
+import type { Accountability, SchemaOverview } from '@smartnews/directus-types';
+import { Action } from '@smartnews/directus-constants';
 import jwt from 'jsonwebtoken';
 import type { Knex } from 'knex';
 import { clone, cloneDeep } from 'lodash-es';

@@ -28,9 +28,9 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n';
 import { defineComponent, PropType, computed } from 'vue';
-import { Permission, Role } from '@directus/types';
-import { Field } from '@directus/types';
-import { useSync } from '@directus/composables';
+import { Permission, Role } from '@smartnews/directus-types';
+import { Field } from '@smartnews/directus-types';
+import { useSync } from '@smartnews/directus-composables';
 import { useFieldsStore } from '@/stores/fields';
 
 export default defineComponent({

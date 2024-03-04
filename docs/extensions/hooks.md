@@ -324,7 +324,7 @@ export default ({ filter }, { services, exceptions }) => {
 ### Add Sentry monitoring
 
 ```js
-import { defineHook } from '@directus/extensions-sdk';
+import { defineHook } from '@smartnews/directus-extensions-sdk';
 import * as Sentry from '@sentry/node';
 import '@sentry/tracing';
 

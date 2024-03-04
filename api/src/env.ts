@@ -3,7 +3,7 @@
  * For all possible keys, see: https://docs.directus.io/self-hosted/config-options/
  */
 
-import { parseJSON, toArray } from '@directus/utils';
+import { parseJSON, toArray } from '@smartnews/directus-utils';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import { clone, toNumber, toString } from 'lodash-es';

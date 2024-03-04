@@ -1,5 +1,5 @@
 {
-	"name": "@directus/storage",
+	"name": "@smartnews/directus-storage",
 	"version": "9.26.0",
 	"type": "module",
 	"scripts": {

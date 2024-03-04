@@ -1,5 +1,5 @@
 {
-	"name": "directus",
+	"name": "@smartnews/directus",
 	"version": "9.26.0",
 	"description": "Directus is a real-time API and App dashboard for managing SQL database content",
 	"type": "module",
@@ -56,7 +56,7 @@
 		"directus": "cli.js"
 	},
 	"dependencies": {
-		"@directus/api": "workspace:*"
+		"@smartnews/directus-api": "workspace:*"
 	},
 	"engines": {
 		"node": ">=18.0.0"

@@ -1,4 +1,4 @@
-import type { RawField, FieldMeta } from '@directus/types';
+import type { RawField, FieldMeta } from '@smartnews/directus-types';
 
 /**
  * Add a flag to a field.

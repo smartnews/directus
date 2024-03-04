@@ -1,5 +1,5 @@
-import { defineDisplay } from '@directus/utils';
-import { TYPES, LOCAL_TYPES } from '@directus/constants';
+import { defineDisplay } from '@smartnews/directus-utils';
+import { TYPES, LOCAL_TYPES } from '@smartnews/directus-constants';
 
 export default defineDisplay({
 	id: 'raw',
