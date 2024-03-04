@@ -66,7 +66,8 @@ project.
 
 ### Pull Requests
 
-Issues marked "Community" are ready to be implemented by anybody at any point! If you're looking to implement an issue that doesn't have that label, please make sure to ping the maintainers before getting started!
+Issues marked "Community" are ready to be implemented by anybody at any point! If you're looking to implement an issue
+that doesn't have that label, please make sure to ping the maintainers before getting started!
 
 #### Contributor License Agreement
 

@@ -22,9 +22,9 @@ If you want to combine and share dependencies between one or more extensions, us
 ### Extension Folder Structure
 
 The folder created by the utility is in fact an npm package. It comes with a few pre-installed packages depending on the
-extension type and the language you chose. The most important one is `@smartnews/directus-extensions-sdk`. This package includes a
-CLI, which allows you to build your extension and to scaffold additional extensions, and it provides Typescript helpers
-and other utilities.
+extension type and the language you chose. The most important one is `@smartnews/directus-extensions-sdk`. This package
+includes a CLI, which allows you to build your extension and to scaffold additional extensions, and it provides
+Typescript helpers and other utilities.
 
 Inside the created folder there is a `src/` folder. This folder contains the entrypoint of your extension. If you write
 additional source files, they should go into this folder.
@@ -132,9 +132,9 @@ on changes automatically.
 ## Publishing your Extension
 
 To make an extension available to all Directus users, you can publish the npm package created by
-`@smartnews/directus-extensions-sdk` to the npm registry. Make sure the name of the package follows the naming convention for
-package extensions: `directus-extension-<extension-name>` or `@<scope>/directus-extension-<extension-name>`.
-`<extension-name>` has to be replaced with the name of your extension.
+`@smartnews/directus-extensions-sdk` to the npm registry. Make sure the name of the package follows the naming
+convention for package extensions: `directus-extension-<extension-name>` or
+`@<scope>/directus-extension-<extension-name>`. `<extension-name>` has to be replaced with the name of your extension.
 
 ## Installing an Extension
 
