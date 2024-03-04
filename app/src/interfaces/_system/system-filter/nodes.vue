@@ -104,7 +104,14 @@ import { useFieldsStore } from '@/stores/fields';
 import { useRelationsStore } from '@/stores/relations';
 import { extractFieldFromFunction } from '@/utils/extract-field-from-function';
 import { useSync } from '@smartnews/directus-composables';
-import { FieldFilter, FieldFilterOperator, Filter, LogicalFilterAND, LogicalFilterOR, Type } from '@smartnews/directus-types';
+import {
+	FieldFilter,
+	FieldFilterOperator,
+	Filter,
+	LogicalFilterAND,
+	LogicalFilterOR,
+	Type,
+} from '@smartnews/directus-types';
 import { getFilterOperatorsForType, getOutputTypeForFunction, toArray } from '@smartnews/directus-utils';
 import { get } from 'lodash';
 import { computed, toRefs } from 'vue';
