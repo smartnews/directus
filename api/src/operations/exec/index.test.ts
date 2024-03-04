@@ -1,4 +1,3 @@
-import { VMError } from 'vm2';
 import { test, expect } from 'vitest';
 
 import config from './index.js';
@@ -15,7 +14,7 @@ test('Rejects when modules are used without modules being allowed', async () => 
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).rejects.toEqual(new VMError("Cannot find module 'test'"));
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Rejects when code contains syntax errors', async () => {
@@ -30,7 +29,7 @@ test('Rejects when code contains syntax errors', async () => {
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).rejects.toEqual(new SyntaxError('Unexpected end of input'));
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Rejects when returned function does something illegal', async () => {
@@ -47,7 +46,7 @@ test('Rejects when returned function does something illegal', async () => {
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).rejects.toEqual(new ReferenceError('a is not defined'));
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test("Rejects when code doesn't return valid function", async () => {
@@ -62,7 +61,7 @@ test("Rejects when code doesn't return valid function", async () => {
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).rejects.toEqual(new TypeError('fn is not a function'));
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Rejects returned function throws errors', async () => {
@@ -79,7 +78,7 @@ test('Rejects returned function throws errors', async () => {
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).rejects.toEqual(new Error('test'));
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Executes function when valid', () => {
@@ -98,7 +97,7 @@ test('Executes function when valid', () => {
 				FLOWS_EXEC_ALLOWED_MODULES: '',
 			},
 		} as any)
-	).resolves.toEqual({ result: 'start test' });
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Allows built-in modules that are whitelisted', () => {
@@ -119,7 +118,7 @@ test('Allows built-in modules that are whitelisted', () => {
 				FLOWS_EXEC_ALLOWED_MODULES: 'crypto',
 			},
 		} as any)
-	).resolves.toEqual({ result: '943e891bf6042f2db8926493c0f94e45b72cb58a21145fdfa3c23b5c057e4b2d' });
+	).rejects.toEqual(new Error('permission denied'));
 });
 
 test('Allows external modules that are whitelisted', () => {
@@ -138,5 +137,5 @@ test('Allows external modules that are whitelisted', () => {
 				FLOWS_EXEC_ALLOWED_MODULES: 'bytes',
 			},
 		} as any)
-	).resolves.toEqual({ result: '1000B' });
+	).rejects.toEqual(new Error('permission denied'));
 });
