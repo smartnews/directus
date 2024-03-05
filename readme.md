@@ -13,6 +13,10 @@ Some feature may be disabled or removed due to impossible to keep upgrade or mai
 
 Will throw error in any cases, because there is no secure VM at the moment.
 
+### Email (SendGrid Transport)
+
+Not supported because `nodemailer-sendgrid` is not maintained anymore.
+
 ## 🐰 Introduction
 
 Directus is a real-time API and App dashboard for managing SQL database content.
