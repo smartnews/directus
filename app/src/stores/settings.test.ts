@@ -5,7 +5,7 @@ import * as notifyUtil from '@/utils/notify';
 import * as unexpectedErrorUtil from '@/utils/unexpected-error';
 import { AxiosRequestConfig } from 'axios';
 import { setActivePinia } from 'pinia';
-import { afterEach, beforeAll, beforeEach, describe, expect, SpyInstance, test, vi } from 'vitest';
+import { afterEach, beforeAll, beforeEach, describe, expect, MockInstance, test, vi } from 'vitest';
 
 beforeEach(() => {
 	setActivePinia(
@@ -96,14 +96,14 @@ vi.mock('@/api', () => {
 	};
 });
 
-let apiGetSpy: SpyInstance;
+let apiGetSpy: MockInstance;
 
 beforeAll(() => {
 	apiGetSpy = vi.spyOn(api, 'get');
 });
 
 afterEach(() => {
-	vi.restoreAllMocks();
+	vi.clearAllMocks();
 });
 
 describe('hydrate action', async () => {
@@ -152,9 +152,9 @@ describe('dehyrate action', () => {
 });
 
 describe('updateSettings action', async () => {
-	let ApiPatchSpy: SpyInstance;
-	let NotifySpy: SpyInstance;
-	let unexpectedErrorSpy: SpyInstance;
+	let ApiPatchSpy: MockInstance;
+	let NotifySpy: MockInstance;
+	let unexpectedErrorSpy: MockInstance;
 
 	beforeEach(() => {
 		ApiPatchSpy = vi.spyOn(api, 'patch');

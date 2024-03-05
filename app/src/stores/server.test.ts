@@ -2,7 +2,7 @@ import api, * as apiFunctions from '@/api';
 import * as setLanguageDefault from '@/lang/set-language';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
-import { afterEach, beforeAll, beforeEach, describe, expect, SpyInstance, test, vi } from 'vitest';
+import { afterEach, beforeAll, beforeEach, describe, expect, MockInstance, test, vi } from 'vitest';
 
 beforeEach(() => {
 	setActivePinia(
@@ -54,9 +54,9 @@ const mockAdminUser = { id: 'e7f7a94d-5b38-4978-8450-de0e38859fec' } as any;
 
 const mockAdminUserWithLanguage = { id: 'e7f7a94d-5b38-4978-8450-de0e38859fec', language: 'zh-CN' } as any;
 
-let apiGetSpy: SpyInstance;
-let replaceQueueSpy: SpyInstance;
-let setLanguageSpy: SpyInstance;
+let apiGetSpy: MockInstance;
+let replaceQueueSpy: MockInstance;
+let setLanguageSpy: MockInstance;
 
 beforeAll(() => {
 	apiGetSpy = vi.spyOn(api, 'get');
@@ -65,7 +65,7 @@ beforeAll(() => {
 });
 
 afterEach(() => {
-	vi.restoreAllMocks();
+	vi.clearAllMocks();
 });
 
 describe('hydrate action', async () => {
