@@ -66,13 +66,7 @@ export default function getMailer(): Transporter {
 			}) as any
 		);
 	} else if (transportName === 'sendgrid') {
-		const sg = require('nodemailer-sendgrid');
-
-		transporter = nodemailer.createTransport(
-			sg({
-				apiKey: env['EMAIL_SENDGRID_API_KEY'],
-			}) as any
-		);
+		logger.warn('Does not support Sendgrid. Check the EMAIL_TRANSPORT env var.');
 	} else {
 		logger.warn('Illegal transport given for email. Check the EMAIL_TRANSPORT env var.');
 	}
