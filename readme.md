@@ -2,6 +2,17 @@
 
 <br />
 
+# Fork from Directus v9
+
+This fork focus on security fixes.
+Some feature may be disabled or removed due to impossible to keep upgrade or maintained.
+
+## Disabled or Removed
+
+### Flow
+
+Will throw error in any cases, because there is no secure VM at the moment.
+
 ## 🐰 Introduction
 
 Directus is a real-time API and App dashboard for managing SQL database content.
