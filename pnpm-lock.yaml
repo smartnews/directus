@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -285,8 +281,8 @@ importers:
         specifier: 2.8.10
         version: 2.8.10
       sanitize-html:
-        specifier: 2.10.0
-        version: 2.10.0
+        specifier: 2.12.1
+        version: 2.12.1
       sharp:
         specifier: 0.32.6
         version: 0.32.6
@@ -873,7 +869,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/constants:
     dependencies:
@@ -922,7 +918,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/extensions-sdk:
     dependencies:
@@ -1010,7 +1006,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/schema:
     dependencies:
@@ -1057,7 +1053,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-azure:
     dependencies:
@@ -1085,7 +1081,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-cloudinary:
     dependencies:
@@ -1116,7 +1112,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-gcs:
     dependencies:
@@ -1144,7 +1140,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-local:
     dependencies:
@@ -1169,7 +1165,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-s3:
     dependencies:
@@ -1203,7 +1199,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/types:
     devDependencies:
@@ -1273,7 +1269,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/utils:
     dependencies:
@@ -14965,12 +14961,12 @@ packages:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+    dev: true
 
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
   /nanoid@4.0.2:
     resolution: {integrity: sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==}
@@ -16396,7 +16392,7 @@ packages:
     resolution: {integrity: sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.6
+      nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
@@ -16407,7 +16403,6 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: true
 
   /postgres-array@2.0.0:
     resolution: {integrity: sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==}
@@ -17622,15 +17617,15 @@ packages:
       xpath: 0.0.32
     dev: false
 
-  /sanitize-html@2.10.0:
-    resolution: {integrity: sha512-JqdovUd81dG4k87vZt6uA6YhDfWkUGruUu/aPmXLxXi45gZExnt9Bnw/qeQU8oGf82vPyaE0vO4aH0PbobB9JQ==}
+  /sanitize-html@2.12.1:
+    resolution: {integrity: sha512-Plh+JAn0UVDpBRP/xEjsk+xDCoOvMBwQUf/K+/cBAVuTbtX8bj2VB7S1sL1dssVpykqp0/KPSesHrqXtokVBpA==}
     dependencies:
       deepmerge: 4.3.1
       escape-string-regexp: 4.0.0
       htmlparser2: 8.0.2
       is-plain-object: 5.0.0
       parse-srcset: 1.0.2
-      postcss: 8.4.23
+      postcss: 8.4.35
     dev: false
 
   /sass@1.62.0:
@@ -18100,6 +18095,9 @@ packages:
   /sqlite3@5.1.6:
     resolution: {integrity: sha512-olYkWoKFVNSSSQNvxVUfjiVbz3YtBwTJj+mfV5zpHmqW3sELx2Cf4QCdirMelhM5Zh+KDVaKgQHqCxrqiWHybw==}
     requiresBuild: true
+    peerDependenciesMeta:
+      node-gyp:
+        optional: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.10
       node-addon-api: 4.3.0
@@ -19572,27 +19570,6 @@ packages:
       vfile-message: 3.1.4
     dev: true
 
-  /vite-node@1.3.1:
-    resolution: {integrity: sha512-azbRrqRxlWTJEVbzInZCTchx0X69M/XPTCz4H+TLvlTcR/xH/3hkRqhOakT41fMJCMzXTu4UvegkZiEoJAWvng==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    dependencies:
-      cac: 6.7.14
-      debug: 4.3.4
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      vite: 5.1.5(sass@1.62.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
-
   /vite-node@1.3.1(@types/node@18.15.13):
     resolution: {integrity: sha512-azbRrqRxlWTJEVbzInZCTchx0X69M/XPTCz4H+TLvlTcR/xH/3hkRqhOakT41fMJCMzXTu4UvegkZiEoJAWvng==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -19770,61 +19747,6 @@ packages:
       - sass
       - stylus
       - sugarss
-      - terser
-    dev: true
-
-  /vitest@1.3.1:
-    resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@edge-runtime/vm': '*'
-      '@types/node': ^18.0.0 || >=20.0.0
-      '@vitest/browser': 1.3.1
-      '@vitest/ui': 1.3.1
-      happy-dom: '*'
-      jsdom: '*'
-    peerDependenciesMeta:
-      '@edge-runtime/vm':
-        optional: true
-      '@types/node':
-        optional: true
-      '@vitest/browser':
-        optional: true
-      '@vitest/ui':
-        optional: true
-      happy-dom:
-        optional: true
-      jsdom:
-        optional: true
-    dependencies:
-      '@vitest/expect': 1.3.1
-      '@vitest/runner': 1.3.1
-      '@vitest/snapshot': 1.3.1
-      '@vitest/spy': 1.3.1
-      '@vitest/utils': 1.3.1
-      acorn-walk: 8.3.2
-      chai: 4.4.1
-      debug: 4.3.4
-      execa: 8.0.1
-      local-pkg: 0.5.0
-      magic-string: 0.30.8
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      std-env: 3.7.0
-      strip-literal: 2.0.0
-      tinybench: 2.6.0
-      tinypool: 0.8.2
-      vite: 5.1.5(sass@1.62.0)
-      vite-node: 1.3.1
-      why-is-node-running: 2.2.2
-    transitivePeerDependencies:
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
       - terser
     dev: true
 
@@ -20498,3 +20420,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
