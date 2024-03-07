@@ -1,4 +1,4 @@
-# create-directus-extension
+# @smartnews/create-directus-extension
 
 A small util that will scaffold a Directus extension.
 
@@ -7,7 +7,7 @@ A small util that will scaffold a Directus extension.
 This package is meant to be used through `npm` or `yarn`:
 
 ```
-npm init directus-extension
+npm init --scope=@smartnews directus-extension
 ```
 
 ```
