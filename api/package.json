@@ -219,7 +219,7 @@
 		"nodemailer-mailgun-transport": "2.1.5",
 		"pg": "8.10.0",
 		"sqlite3": "5.1.6",
-		"tedious": "16.0.0"
+		"tedious": "16.7.1"
 	},
 	"engines": {
 		"node": ">=18.0.0"

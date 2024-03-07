@@ -211,7 +211,7 @@ importers:
         version: 4.5.2
       knex:
         specifier: 2.4.2
-        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0)
+        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1)
       ldapjs:
         specifier: 2.3.3
         version: 2.3.3
@@ -337,8 +337,8 @@ importers:
         specifier: 5.1.6
         version: 5.1.6
       tedious:
-        specifier: 16.0.0
-        version: 16.0.0
+        specifier: 16.7.1
+        version: 16.7.1
     devDependencies:
       '@directus/tsconfig':
         specifier: 0.0.7
@@ -1013,7 +1013,7 @@ importers:
     dependencies:
       knex:
         specifier: 2.4.2
-        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0)
+        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1)
     devDependencies:
       '@directus/tsconfig':
         specifier: 0.0.7
@@ -1227,7 +1227,7 @@ importers:
         version: 0.5.0
       knex:
         specifier: 2.4.2
-        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0)
+        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1)
       pino:
         specifier: 8.11.0
         version: 8.11.0
@@ -1382,7 +1382,7 @@ importers:
         version: 2.2.5
       knex:
         specifier: 2.4.2
-        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0)
+        version: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1)
       listr2:
         specifier: 6.3.1
         version: 6.3.1
@@ -2618,6 +2618,13 @@ packages:
     dependencies:
       tslib: 2.5.0
 
+  /@azure/abort-controller@2.0.0:
+    resolution: {integrity: sha512-RP/mR/WJchR+g+nQFJGOec+nzeN/VvjlwbinccoqfhTsTHbb8X5+mLDp48kHT0ueyum0BNSwGm0kX0UZuIqTGg==}
+    engines: {node: '>=18.0.0'}
+    requiresBuild: true
+    dependencies:
+      tslib: 2.5.0
+
   /@azure/core-auth@1.4.0:
     resolution: {integrity: sha512-HFrcTgmuSuukRf/EdPmqBrc5l6Q5Uu+2TbuhaKbgaCpP2TfAeiNaQPAadxO+CYBRHGUzIDteMAjFspFLDLnKVQ==}
     engines: {node: '>=12.0.0'}
@@ -2626,16 +2633,25 @@ packages:
       '@azure/abort-controller': 1.1.0
       tslib: 2.5.0
 
+  /@azure/core-auth@1.6.0:
+    resolution: {integrity: sha512-3X9wzaaGgRaBCwhLQZDtFp5uLIXCPrGbwJNWPPugvL4xbIGgScv77YzzxToKGLAKvG9amDoofMoP+9hsH1vs1w==}
+    engines: {node: '>=18.0.0'}
+    requiresBuild: true
+    dependencies:
+      '@azure/abort-controller': 2.0.0
+      '@azure/core-util': 1.7.0
+      tslib: 2.5.0
+
   /@azure/core-client@1.7.2:
     resolution: {integrity: sha512-ye5554gnVnXdfZ64hptUtETgacXoRWxYv1JF5MctoAzTSH5dXhDPZd9gOjDPyWMcLIk58pnP5+p5vGX6PYn1ag==}
     engines: {node: '>=14.0.0'}
     requiresBuild: true
     dependencies:
       '@azure/abort-controller': 1.1.0
-      '@azure/core-auth': 1.4.0
+      '@azure/core-auth': 1.6.0
       '@azure/core-rest-pipeline': 1.10.3
       '@azure/core-tracing': 1.0.1
-      '@azure/core-util': 1.3.1
+      '@azure/core-util': 1.7.0
       '@azure/logger': 1.0.4
       tslib: 2.5.0
     transitivePeerDependencies:
@@ -2697,9 +2713,9 @@ packages:
     requiresBuild: true
     dependencies:
       '@azure/abort-controller': 1.1.0
-      '@azure/core-auth': 1.4.0
+      '@azure/core-auth': 1.6.0
       '@azure/core-tracing': 1.0.1
-      '@azure/core-util': 1.3.1
+      '@azure/core-util': 1.7.0
       '@azure/logger': 1.0.4
       form-data: 4.0.0
       http-proxy-agent: 5.0.0
@@ -2731,27 +2747,33 @@ packages:
       '@azure/abort-controller': 1.1.0
       tslib: 2.5.0
 
-  /@azure/identity@2.1.0:
-    resolution: {integrity: sha512-BPDz1sK7Ul9t0l9YKLEa8PHqWU4iCfhGJ+ELJl6c8CP3TpJt2urNCbm0ZHsthmxRsYoMPbz2Dvzj30zXZVmAFw==}
-    engines: {node: '>=12.0.0'}
+  /@azure/core-util@1.7.0:
+    resolution: {integrity: sha512-Zq2i3QO6k9DA8vnm29mYM4G8IE9u1mhF1GUabVEqPNX8Lj833gdxQ2NAFxt2BZsfAL+e9cT8SyVN7dFVJ/Hf0g==}
+    engines: {node: '>=18.0.0'}
+    requiresBuild: true
+    dependencies:
+      '@azure/abort-controller': 2.0.0
+      tslib: 2.5.0
+
+  /@azure/identity@3.4.2:
+    resolution: {integrity: sha512-0q5DL4uyR0EZ4RXQKD8MadGH6zTIcloUoS/RVbCpNpej4pwte0xpqYxk8K97Py2RiuUvI7F4GXpoT4046VfufA==}
+    engines: {node: '>=14.0.0'}
     requiresBuild: true
     dependencies:
       '@azure/abort-controller': 1.1.0
-      '@azure/core-auth': 1.4.0
+      '@azure/core-auth': 1.6.0
       '@azure/core-client': 1.7.2
       '@azure/core-rest-pipeline': 1.10.3
       '@azure/core-tracing': 1.0.1
-      '@azure/core-util': 1.3.1
+      '@azure/core-util': 1.7.0
       '@azure/logger': 1.0.4
-      '@azure/msal-browser': 2.36.0
-      '@azure/msal-common': 7.6.0
-      '@azure/msal-node': 1.17.1
+      '@azure/msal-browser': 3.10.0
+      '@azure/msal-node': 2.6.4
       events: 3.3.0
       jws: 4.0.0
       open: 8.4.2
       stoppable: 1.1.0
       tslib: 2.5.0
-      uuid: 8.3.2
     transitivePeerDependencies:
       - supports-color
 
@@ -2781,29 +2803,24 @@ packages:
     dependencies:
       tslib: 2.5.0
 
-  /@azure/msal-browser@2.36.0:
-    resolution: {integrity: sha512-OrVDZ9ftO7ExqZVHripAt+doKg6G14YbP2LoSygiWQoSqoO4CejoXLRLqANc/HGg18N0p/oaRETw4IHZvwsxZw==}
+  /@azure/msal-browser@3.10.0:
+    resolution: {integrity: sha512-mnmi8dCXVNZI+AGRq0jKQ3YiodlIC4W9npr6FCB9WN6NQT+6rq+cIlxgUb//BjLyzKsnYo+i4LROGeMyU+6v1A==}
     engines: {node: '>=0.8.0'}
     requiresBuild: true
     dependencies:
-      '@azure/msal-common': 12.1.0
+      '@azure/msal-common': 14.7.1
 
-  /@azure/msal-common@12.1.0:
-    resolution: {integrity: sha512-9RUiv0evSHvYtvF7r9ksShw9FgCeT6Rf6JB/SOMbMzI0VySZDUBSE+0b9e7DgL2Ph8wSARIh3m8c5pCK9TRY3w==}
+  /@azure/msal-common@14.7.1:
+    resolution: {integrity: sha512-v96btzjM7KrAu4NSEdOkhQSTGOuNUIIsUdB8wlyB9cdgl5KqEKnTonHUZ8+khvZ6Ap542FCErbnTyDWl8lZ2rA==}
     engines: {node: '>=0.8.0'}
     requiresBuild: true
 
-  /@azure/msal-common@7.6.0:
-    resolution: {integrity: sha512-XqfbglUTVLdkHQ8F9UQJtKseRr3sSnr9ysboxtoswvaMVaEfvyLtMoHv9XdKUfOc0qKGzNgRFd9yRjIWVepl6Q==}
-    engines: {node: '>=0.8.0'}
-    requiresBuild: true
-
-  /@azure/msal-node@1.17.1:
-    resolution: {integrity: sha512-1lC80yV+Y/gHqkYJ21Qy1Ej/cI/Kt1JcdY0xiM7/+mcEuBAkArR9B1YMY538PMZ5GfyVlYkCHYh/N0CBD5FJlQ==}
-    engines: {node: 10 || 12 || 14 || 16 || 18}
+  /@azure/msal-node@2.6.4:
+    resolution: {integrity: sha512-nNvEPx009/80UATCToF+29NZYocn01uKrB91xtFr7bSqkqO1PuQGXRyYwryWRztUrYZ1YsSbw9A+LmwOhpVvcg==}
+    engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
-      '@azure/msal-common': 12.1.0
+      '@azure/msal-common': 14.7.1
       jsonwebtoken: 9.0.0
       uuid: 8.3.2
 
@@ -7075,7 +7092,7 @@ packages:
       ts-dedent: 2.2.0
       type-fest: 3.13.1
       vue: 3.2.47
-      vue-component-type-helpers: 2.0.4
+      vue-component-type-helpers: 2.0.6
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -7603,6 +7620,13 @@ packages:
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
     dev: true
+
+  /@types/readable-stream@4.0.10:
+    resolution: {integrity: sha512-AbUKBjcC8SHmImNi4yK2bbjogQlkFSg7shZCcicxPQapniOlajG8GCc39lvXzCWX4lLRRs7DM3VAeSlqmEVZUA==}
+    requiresBuild: true
+    dependencies:
+      '@types/node': 18.15.13
+      safe-buffer: 5.1.2
 
   /@types/resolve@1.20.2:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -8912,6 +8936,16 @@ packages:
       buffer: 6.0.3
       inherits: 2.0.4
       readable-stream: 3.6.2
+    dev: false
+
+  /bl@6.0.12:
+    resolution: {integrity: sha512-EnEYHilP93oaOa2MnmNEjAcovPS3JlQZOyzGXi3EyEpPhm9qWvdDp7BmAVEVusGzp8LlwQK56Av+OkDoRjzE0w==}
+    requiresBuild: true
+    dependencies:
+      '@types/readable-stream': 4.0.10
+      buffer: 6.0.3
+      inherits: 2.0.4
+      readable-stream: 4.3.0
 
   /bluebird@3.7.2:
     resolution: {integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==}
@@ -13549,11 +13583,11 @@ packages:
     peerDependencies:
       knex: ^2.0.0
     dependencies:
-      knex: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0)
+      knex: 2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1)
       lodash.clonedeep: 4.5.0
     dev: true
 
-  /knex@2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.0.0):
+  /knex@2.4.2(mysql@2.18.1)(pg@8.10.0)(sqlite3@5.1.6)(tedious@16.7.1):
     resolution: {integrity: sha512-tMI1M7a+xwHhPxjbl/H9K1kHX+VncEYcvCx5K00M16bWvpYPKAZd6QrCu68PtHAdIZNQPWZn0GVhqVBEthGWCg==}
     engines: {node: '>=12'}
     hasBin: true
@@ -13597,7 +13631,7 @@ packages:
       resolve-from: 5.0.0
       sqlite3: 5.1.6
       tarn: 3.0.2
-      tedious: 16.0.0
+      tedious: 16.7.1
       tildify: 2.0.0
     transitivePeerDependencies:
       - supports-color
@@ -16498,6 +16532,7 @@ packages:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
     requiresBuild: true
+    dev: true
 
   /puppeteer-core@2.1.1:
     resolution: {integrity: sha512-n13AWriBMPYxnpbb6bnaY5YoY6rGj8vPLrz6CZF3o0qJNEwlcfJVxBzYZ0NJsQ21UbdJoijPCDrM++SUVEz7+w==}
@@ -18376,22 +18411,21 @@ packages:
     resolution: {integrity: sha512-51LAVKUSZSVfI05vjPESNc5vwqqZpbXCsU+/+wxlOrUjk2SnFTt97v9ZgQrD4YmxYW1Px6w2KjaDitCfkvgxMQ==}
     engines: {node: '>=8.0.0'}
 
-  /tedious@16.0.0:
-    resolution: {integrity: sha512-8Obq4NoAgjr4iTihRU8tGFX6FbUQc5fbn5vsTbScQQhLsi7nrY7h2rPBE+JS8wjLLKYMmZBt9KfpTFqDdLf93w==}
+  /tedious@16.7.1:
+    resolution: {integrity: sha512-NmedZS0NJiTv3CoYnf1FtjxIDUgVYzEmavrc8q2WHRb+lP4deI9BpQfmNnBZZaWusDbP5FVFZCcvzb3xOlNVlQ==}
     engines: {node: '>=16'}
     requiresBuild: true
     dependencies:
-      '@azure/identity': 2.1.0
+      '@azure/identity': 3.4.2
       '@azure/keyvault-keys': 4.7.0
       '@js-joda/core': 5.5.3
-      bl: 5.1.0
+      bl: 6.0.12
       es-aggregate-error: 1.0.9
       iconv-lite: 0.6.3
       js-md4: 0.3.2
       jsbi: 4.3.0
       native-duplexpair: 1.0.0
       node-abort-controller: 3.1.1
-      punycode: 2.3.0
       sprintf-js: 1.1.2
     transitivePeerDependencies:
       - supports-color
@@ -19650,8 +19684,8 @@ packages:
       pbf: 3.2.1
     dev: true
 
-  /vue-component-type-helpers@2.0.4:
-    resolution: {integrity: sha512-IFZ8rjfV1zWf1LOMPfmMaHe28zZfo5w2NyZxCqeqLGT3CGur0Y9+R3/bvX400tqVukuzf8mLw2fOvGTyXKPWjg==}
+  /vue-component-type-helpers@2.0.6:
+    resolution: {integrity: sha512-qdGXCtoBrwqk1BT6r2+1Wcvl583ZVkuSZ3or7Y1O2w5AvWtlvvxwjGhmz5DdPJS9xqRdDlgTJ/38ehWnEi0tFA==}
     dev: true
 
   /vue-demi@0.14.0(vue@3.2.47):
