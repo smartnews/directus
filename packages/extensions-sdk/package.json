@@ -1,6 +1,6 @@
 {
 	"name": "@smartnews/directus-extensions-sdk",
-	"version": "10.0.0-rc.4",
+	"version": "10.0.0-rc.5",
 	"description": "A toolkit to develop extensions to extend Directus",
 	"homepage": "https://directus.io",
 	"type": "module",
