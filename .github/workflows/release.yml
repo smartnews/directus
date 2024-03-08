@@ -33,4 +33,4 @@ jobs:
       - name: Publish packages to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm --recursive publish --access=public --no-git-checks
+        run: pnpm --recursive publish --access=restricted --no-git-checks
