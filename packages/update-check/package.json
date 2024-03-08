@@ -1,6 +1,6 @@
 {
 	"name": "@smartnews/directus-update-check",
-	"version": "10.0.0-rc.1",
+	"version": "10.0.0-rc.2",
 	"type": "module",
 	"scripts": {
 		"build": "tsc --build",
