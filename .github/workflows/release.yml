@@ -27,10 +27,8 @@ jobs:
 
       - name: Prepare
         uses: ./.github/actions/prepare
-        with:
-          registry: https://npm.pkg.github.com/smartnews
 
       - name: Publish packages to NPM
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm --recursive publish --access=restricted --no-git-checks
