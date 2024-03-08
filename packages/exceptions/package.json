@@ -25,9 +25,6 @@
 		"dist",
 		"!**/*.test.{js,d.ts}"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
 	"devDependencies": {
 		"@directus/tsconfig": "0.0.7",
 		"@smartnews/directus-types": "workspace:*",

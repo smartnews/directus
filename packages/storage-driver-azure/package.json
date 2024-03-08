@@ -25,9 +25,6 @@
 		"dist",
 		"!**/*.d.ts?(.map)"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
 	"dependencies": {
 		"@azure/storage-blob": "12.14.0",
 		"@smartnews/directus-storage": "workspace:*",

@@ -25,9 +25,6 @@
 		"dist",
 		"!**/*.d.ts?(.map)"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
 	"dependencies": {
 		"@smartnews/directus-storage": "workspace:*",
 		"@smartnews/directus-utils": "workspace:*"

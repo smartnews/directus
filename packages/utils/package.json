@@ -36,9 +36,6 @@
 		"dist",
 		"!**/*.test.{js,d.ts}"
 	],
-	"publishConfig": {
-		"access": "public"
-	},
 	"dependencies": {
 		"@smartnews/directus-constants": "workspace:*",
 		"@smartnews/directus-storage": "workspace:*",
