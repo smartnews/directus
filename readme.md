@@ -4,8 +4,8 @@
 
 # Fork from Directus v9
 
-This fork focus on security fixes.
-Some feature may be disabled or removed due to impossible to keep upgrade or maintained.
+This fork focus on security fixes. Some feature may be disabled or removed due to impossible to keep upgrade or
+maintained.
 
 ## Disabled or Removed
 
