@@ -27,7 +27,7 @@ import 'codemirror/addon/dialog/dialog.js';
 import 'codemirror/keymap/sublime.js';
 
 import formatTitle from '@directus/format-title';
-import { isValidJSON, parseJSON } from "@smartnews/directus-utils";
+import { isValidJSON, parseJSON } from '@smartnews/directus-utils';
 import importCodemirrorMode from './import-codemirror-mode';
 import { useWindowSize } from '@/composables/use-window-size';
 
@@ -128,7 +128,10 @@ export default defineComponent({
 
 			if (props.type === 'json' || typeof props.value === 'object') {
 				const value = props.value;
-				const valueToStringify = typeof value === 'string' && isValidJSON(String(value)) ? parseJSON(String(value)) : value;
+
+				const valueToStringify =
+					typeof value === 'string' && isValidJSON(String(value)) ? parseJSON(String(value)) : value;
+
 				return JSON.stringify(valueToStringify, null, 4);
 			}
 
