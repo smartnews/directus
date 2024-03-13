@@ -1,6 +1,6 @@
 {
 	"name": "@smartnews/directus-api",
-	"version": "10.0.0-rc.5",
+	"version": "10.0.0",
 	"description": "Directus is a real-time API and App dashboard for managing SQL database content",
 	"type": "module",
 	"keywords": [

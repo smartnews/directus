@@ -1,6 +1,6 @@
 {
 	"name": "@smartnews/directus-specs",
-	"version": "10.0.0-rc.5",
+	"version": "10.0.0",
 	"description": "OpenAPI Specification of the Directus API",
 	"homepage": "https://directus.io",
 	"type": "module",
