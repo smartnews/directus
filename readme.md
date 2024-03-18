@@ -7,7 +7,7 @@
 This fork focus on security fixes. Some feature may be disabled or removed due to impossible to keep upgrade or
 maintained.
 
-## Disabled or Removed
+## Disabled or Removed Features
 
 ### Flow
 
@@ -16,6 +16,11 @@ Will throw error in any cases, because there is no secure VM at the moment.
 ### Email (SendGrid Transport)
 
 Not supported because `nodemailer-sendgrid` is not maintained anymore.
+
+## How to Make New NPM Release
+
+1. Create a tag starting with `v`, e.g. `v10.0.0`.
+2. Push the tag will trigger Github Actions to release a new version to NPM.
 
 ## 🐰 Introduction
 
