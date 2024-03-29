@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 importers:
 
   .:
@@ -162,8 +158,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       express:
-        specifier: 4.18.2
-        version: 4.18.2
+        specifier: 4.19.2
+        version: 4.19.2
       fast-redact:
         specifier: 3.1.2
         version: 3.1.2
@@ -870,7 +866,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/constants:
     dependencies:
@@ -919,7 +915,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/extensions-sdk:
     dependencies:
@@ -1007,7 +1003,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/schema:
     dependencies:
@@ -1054,7 +1050,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-azure:
     dependencies:
@@ -1082,7 +1078,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-cloudinary:
     dependencies:
@@ -1113,7 +1109,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-gcs:
     dependencies:
@@ -1141,7 +1137,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-local:
     dependencies:
@@ -1166,7 +1162,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/storage-driver-s3:
     dependencies:
@@ -1200,7 +1196,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/types:
     devDependencies:
@@ -1220,8 +1216,8 @@ importers:
         specifier: 7946.0.10
         version: 7946.0.10
       express:
-        specifier: 4.18.2
-        version: 4.18.2
+        specifier: 4.19.2
+        version: 4.19.2
       geojson:
         specifier: 0.5.0
         version: 0.5.0
@@ -1270,7 +1266,7 @@ importers:
         version: 5.0.4
       vitest:
         specifier: 1.3.1
-        version: 1.3.1
+        version: 1.3.1(happy-dom@9.8.4)(sass@1.62.0)
 
   packages/utils:
     dependencies:
@@ -6601,7 +6597,7 @@ packages:
       ejs: 3.1.9
       esbuild: 0.18.20
       esbuild-plugin-alias: 0.2.1
-      express: 4.18.2
+      express: 4.19.2
       find-cache-dir: 3.3.2
       fs-extra: 11.1.1
       process: 0.11.10
@@ -6638,7 +6634,7 @@ packages:
       '@types/find-cache-dir': 3.2.1
       browser-assert: 1.2.1
       es-module-lexer: 0.9.3
-      express: 4.18.2
+      express: 4.19.2
       find-cache-dir: 3.3.2
       fs-extra: 11.1.1
       magic-string: 0.30.0
@@ -6694,7 +6690,7 @@ packages:
       detect-indent: 6.1.0
       envinfo: 7.8.1
       execa: 5.1.1
-      express: 4.18.2
+      express: 4.19.2
       find-up: 5.0.0
       fs-extra: 11.1.1
       get-npm-tarball-url: 2.0.3
@@ -6841,7 +6837,7 @@ packages:
       cli-table3: 0.6.3
       compression: 1.7.4
       detect-port: 1.5.1
-      express: 4.18.2
+      express: 4.19.2
       fs-extra: 11.1.1
       globby: 11.1.0
       ip: 2.0.1
@@ -7092,7 +7088,7 @@ packages:
       ts-dedent: 2.2.0
       type-fest: 3.13.1
       vue: 3.2.47
-      vue-component-type-helpers: 2.0.6
+      vue-component-type-helpers: 2.0.7
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -8953,8 +8949,8 @@ packages:
     dev: false
     optional: true
 
-  /body-parser@1.20.1:
-    resolution: {integrity: sha512-jWi7abTbYwajOytWCQc37VulmWiRae5RyTpaCyDcS5/lMdtwSz5lOpDE67srw/HYe35f1z3fDQw+3txg7gNtWw==}
+  /body-parser@1.20.2:
+    resolution: {integrity: sha512-ml9pReCu3M61kGlqoTm2umSXTlRTuGTx0bfYj+uIUKKYycG5NtSbeetV3faSU6R7ajOPw0g/J1PvK4qNy7s5bA==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
     dependencies:
       bytes: 3.1.2
@@ -8966,7 +8962,7 @@ packages:
       iconv-lite: 0.4.24
       on-finished: 2.4.1
       qs: 6.11.0
-      raw-body: 2.5.1
+      raw-body: 2.5.2
       type-is: 1.6.18
       unpipe: 1.0.0
     transitivePeerDependencies:
@@ -9858,8 +9854,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /cookie@0.5.0:
-    resolution: {integrity: sha512-YZ3GUyn/o8gfKJlnlX7g7xq4gyO6OSuhGPKaaGssGB2qgDUS0gPgtTvoyZLTt9Ab6dC4hfc9dV5arkvc/OCmrw==}
+  /cookie@0.6.0:
+    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
     engines: {node: '>= 0.6'}
 
   /cookiejar@2.1.4:
@@ -11110,16 +11106,16 @@ packages:
       jest-util: 29.7.0
     dev: true
 
-  /express@4.18.2:
-    resolution: {integrity: sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==}
+  /express@4.19.2:
+    resolution: {integrity: sha512-5T6nhjsT+EOMzuck8JjBHARTHfMht0POzlA60WV2pMD3gyXw2LZnZ+ueGdNxG+0calOJcWKbpFcuzLZ91YWq9Q==}
     engines: {node: '>= 0.10.0'}
     dependencies:
       accepts: 1.3.8
       array-flatten: 1.1.1
-      body-parser: 1.20.1
+      body-parser: 1.20.2
       content-disposition: 0.5.4
       content-type: 1.0.5
-      cookie: 0.5.0
+      cookie: 0.6.0
       cookie-signature: 1.0.6
       debug: 2.6.9
       depd: 2.0.0
@@ -16638,8 +16634,8 @@ packages:
     resolution: {integrity: sha512-dgH4T44TzKVO9CLArNto62hJOwlWJMLUjVVr/ii0uUzZXEXthDNr7/yefW5z/1vvHAfycc1tnuiYyNJ8CTRB3g==}
     dev: false
 
-  /raw-body@2.5.1:
-    resolution: {integrity: sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==}
+  /raw-body@2.5.2:
+    resolution: {integrity: sha512-8zGqypfENjCIqGhgXToC8aB2r7YrBX+AQAfIPs/Mlk+BtPTztOvTS01NRW/3Eh60J+a48lt8qsCzirQ6loCVfA==}
     engines: {node: '>= 0.8'}
     dependencies:
       bytes: 3.1.2
@@ -17865,6 +17861,9 @@ packages:
   /sqlite3@5.1.6:
     resolution: {integrity: sha512-olYkWoKFVNSSSQNvxVUfjiVbz3YtBwTJj+mfV5zpHmqW3sELx2Cf4QCdirMelhM5Zh+KDVaKgQHqCxrqiWHybw==}
     requiresBuild: true
+    peerDependenciesMeta:
+      node-gyp:
+        optional: true
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.10
       node-addon-api: 4.3.0
@@ -18323,7 +18322,7 @@ packages:
     dependencies:
       chokidar: 3.5.3
       commander: 5.1.0
-      express: 4.18.2
+      express: 4.19.2
       js-yaml: 3.14.1
       json-refs: 3.0.15
       open: 7.4.2
@@ -19295,27 +19294,6 @@ packages:
       vfile-message: 3.1.4
     dev: true
 
-  /vite-node@1.3.1:
-    resolution: {integrity: sha512-azbRrqRxlWTJEVbzInZCTchx0X69M/XPTCz4H+TLvlTcR/xH/3hkRqhOakT41fMJCMzXTu4UvegkZiEoJAWvng==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    dependencies:
-      cac: 6.7.14
-      debug: 4.3.4
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      vite: 5.1.5(sass@1.62.0)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
-
   /vite-node@1.3.1(@types/node@18.15.13):
     resolution: {integrity: sha512-azbRrqRxlWTJEVbzInZCTchx0X69M/XPTCz4H+TLvlTcR/xH/3hkRqhOakT41fMJCMzXTu4UvegkZiEoJAWvng==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -19496,61 +19474,6 @@ packages:
       - terser
     dev: true
 
-  /vitest@1.3.1:
-    resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@edge-runtime/vm': '*'
-      '@types/node': ^18.0.0 || >=20.0.0
-      '@vitest/browser': 1.3.1
-      '@vitest/ui': 1.3.1
-      happy-dom: '*'
-      jsdom: '*'
-    peerDependenciesMeta:
-      '@edge-runtime/vm':
-        optional: true
-      '@types/node':
-        optional: true
-      '@vitest/browser':
-        optional: true
-      '@vitest/ui':
-        optional: true
-      happy-dom:
-        optional: true
-      jsdom:
-        optional: true
-    dependencies:
-      '@vitest/expect': 1.3.1
-      '@vitest/runner': 1.3.1
-      '@vitest/snapshot': 1.3.1
-      '@vitest/spy': 1.3.1
-      '@vitest/utils': 1.3.1
-      acorn-walk: 8.3.2
-      chai: 4.4.1
-      debug: 4.3.4
-      execa: 8.0.1
-      local-pkg: 0.5.0
-      magic-string: 0.30.8
-      pathe: 1.1.2
-      picocolors: 1.0.0
-      std-env: 3.7.0
-      strip-literal: 2.0.0
-      tinybench: 2.6.0
-      tinypool: 0.8.2
-      vite: 5.1.5(sass@1.62.0)
-      vite-node: 1.3.1
-      why-is-node-running: 2.2.2
-    transitivePeerDependencies:
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - terser
-    dev: true
-
   /vitest@1.3.1(@types/node@18.15.13):
     resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -19684,8 +19607,8 @@ packages:
       pbf: 3.2.1
     dev: true
 
-  /vue-component-type-helpers@2.0.6:
-    resolution: {integrity: sha512-qdGXCtoBrwqk1BT6r2+1Wcvl583ZVkuSZ3or7Y1O2w5AvWtlvvxwjGhmz5DdPJS9xqRdDlgTJ/38ehWnEi0tFA==}
+  /vue-component-type-helpers@2.0.7:
+    resolution: {integrity: sha512-7e12Evdll7JcTIocojgnCgwocX4WzIYStGClBQ+QuWPinZo/vQolv2EMq4a3lg16TKfwWafLimG77bxb56UauA==}
     dev: true
 
   /vue-demi@0.14.0(vue@3.2.47):
@@ -20222,3 +20145,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
